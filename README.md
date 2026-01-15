@@ -15,8 +15,6 @@ Working GNSS HAL for Android 14+ (AIDL). Parses NMEA from UART GPS modules.
 
 **Tested modules:**
 - Quectel LC29H
-- u-blox NEO-M8N, NEO-M9N
-- Beitian BN-220, BN-880
 
 **Wiring:**
 ```
