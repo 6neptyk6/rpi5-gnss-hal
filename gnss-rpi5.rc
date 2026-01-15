@@ -1,0 +1,4 @@
+service gnss_hal_service /vendor/bin/hw/android.hardware.gnss-service.rpi5
+    class hal
+    user gps
+    group gps system

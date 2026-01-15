@@ -1,0 +1,19 @@
+cc_binary {
+    name: "android.hardware.gnss-service.rpi5",
+    relative_install_path: "hw",
+    vendor: true,
+    init_rc: ["gnss-rpi5.rc"],
+    vintf_fragments: ["manifest_gnss.xml"],
+    srcs: [
+        "Gnss.cpp",
+        "NmeaReader.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+        "android.hardware.gnss-V3-ndk",
+    ],
+}
