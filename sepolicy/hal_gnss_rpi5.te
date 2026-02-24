@@ -1,0 +1,4 @@
+allow hal_gnss_default gps_device:chr_file { open read write ioctl getattr };
+binder_use(hal_gnss_default)
+binder_call(hal_gnss_default, system_server)
+get_prop(hal_gnss_default, hwservicemanager_prop)
